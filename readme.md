@@ -1,5 +1,5 @@
 
-## ZMK config for chalk keyboard
+## ZMK config for the chalk keyboard
 
 ### Firmware compilation guide
 #### Local
