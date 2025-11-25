@@ -12,7 +12,7 @@ This repo uses [zmk-nix](https://github.com/lilyinstarlight/zmk-nix) to build th
 5. Run `nix run .#update`
     - This might clear the `revision` parameter in west.yml, replace this with the latest commit hash from the latest zmk commit
     - Check for the latest zephyrDependencyHash in flake.nix. If it is empty `nix build .` will fail
-        - Just run the command `nix build . ` once it will output the correct hash
+        - Just run the command `nix build . ` once. It will output the correct hash. Then just copy it into flake.nix
 
 6. Run `nix build .` to build the firmware
 7. The firmware will be located in `/result`
