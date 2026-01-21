@@ -34,8 +34,9 @@
                 compatible = "zmk,behavior-mod-morph";
                 label = "MINUS_UNDERSCORE";
                 #binding-cells = <0>;
-                bindings = <&kp KP_MINUS>, <&kp UNDERSCORE>;
+                bindings = <&kp KP_MINUS>, <&kp MINUS>;
                 mods = <(MOD_LSFT|MOD_RSFT)>;
+                keep-mods = <(MOD_LSFT|MOD_RSFT)>;
             };
         };
 
