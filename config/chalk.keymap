@@ -7,7 +7,6 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
-#include "keys_de.h"
 #include <dt-bindings/zmk/outputs.h>
 
 
@@ -45,7 +44,7 @@
                         bindings = <
                             &lt 5 TAB      &kp Q  &kp W  &kp F  &kp P  &kp B       &kp J  &kp L  &kp U          &kp Y       &kp FSLH   &kp EQUAL
                             &mt LCTRL F12  &kp A  &kp R  &kp S  &kp T  &kp G       &kp M  &kp N  &kp E          &kp I       &kp O         &kp F11
-                            &kp LSHFT      &lt 3 Z  &lt 4 X  &kp C  &kp D  &kp V       &kp K  &kp H  &kp DE_COMMA   &kp DE_DOT  &kp MINUS     &kp EQUAL
+                            &kp LSHFT      &lt 3 Z  &lt 4 X  &kp C  &kp D  &kp V       &kp K  &kp H  &kp COMMA      &kp DOT     &kp MINUS     &kp EQUAL
                                                   &mt LALT DEL  &kp SPACE  &mt LGUI ESC    &lt 2 RET  &lt 1 BSPC  &mt RALT F10
                         >;
                 };
@@ -75,7 +74,7 @@
                         bindings = <
                             &kp LA(LS(N0))  &kp LA(LS(Q))  &kp LA(LS(W))  &kp LA(LS(F))  &kp LA(LS(P))  &kp LA(LS(B))    &kp LA(LS(J))    &kp LA(LS(L))    &kp LA(LS(U))         &kp LA(LS(Y))         &kp LA(LS(FSLH))     &kp LA(LS(N0))
                             &kp LA(LS(N0))  &kp LA(LS(A))  &kp LA(LS(R))  &kp LA(LS(S))  &kp LA(LS(T))  &kp LA(LS(G))    &kp LA(LS(M))    &kp LA(LS(N))    &kp LA(LS(E))         &kp LA(LS(I))         &kp LA(LS(O))           &kp LA(LS(N0))
-                            &kp LA(LS(N0))  &trans         &kp LA(LS(X))  &kp LA(LS(C))  &kp LA(LS(D))  &kp LA(LS(V))    &kp LA(LS(K))    &kp LA(LS(H))    &kp LA(LS(DE_COMMA))  &kp LA(LS(DE_DOT))    &kp LA(LS(MINUS))       &kp LA(LS(N0))
+                            &kp LA(LS(N0))  &trans         &kp LA(LS(X))  &kp LA(LS(C))  &kp LA(LS(D))  &kp LA(LS(V))    &kp LA(LS(K))    &kp LA(LS(H))    &kp LA(LS(COMMA))     &kp LA(LS(DOT))       &kp LA(LS(MINUS))       &kp LA(LS(N0))
                                                                           &kp LA(LS(F7))  &kp LA(LS(F8))  &kp LA(LS(F9))    &kp LA(LS(F11))  &kp LA(LS(F12))  &kp LA(LS(F13))
                         >;
                 };
