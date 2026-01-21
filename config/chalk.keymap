@@ -11,6 +11,20 @@
 
 
 / {
+        macros {
+            underscore_macro: underscore_macro {
+                compatible = "zmk,behavior-macro";
+                #binding-cells = <0>;
+                wait-ms = <0>;
+                tap-ms = <0>;
+                bindings
+                    = <&macro_press &kp LSHFT>
+                    , <&macro_tap &kp MINUS>
+                    , <&macro_release &kp LSHFT>
+                    ;
+            };
+        };
+
         behaviors {
             lt_hp: layer_tap_hold_preferred {
                 compatible = "zmk,behavior-hold-tap";
@@ -34,9 +48,8 @@
                 compatible = "zmk,behavior-mod-morph";
                 label = "MINUS_UNDERSCORE";
                 #binding-cells = <0>;
-                bindings = <&kp KP_MINUS>, <&kp MINUS>;
+                bindings = <&kp KP_MINUS>, <&underscore_macro>;
                 mods = <(MOD_LSFT|MOD_RSFT)>;
-                keep-mods = <(MOD_LSFT|MOD_RSFT)>;
             };
         };
 
@@ -52,7 +65,7 @@
                         bindings = <
                             &lt 5 TAB      &kp Q  &kp W  &kp F  &kp P  &kp B       &kp J  &kp L  &kp U          &kp Y       &kp FSLH   &kp EQUAL
                             &mt LCTRL F12  &kp A  &kp R  &kp S  &kp T  &kp G       &kp M  &kp N  &kp E          &kp I       &kp O         &kp F11
-                            &kp LSHFT      &lt 3 Z  &lt 4 X  &kp C  &kp D  &kp V       &kp K  &kp H  &kp COMMA      &kp DOT     &minus_under  &kp EQUAL
+                            &kp LSHFT      &lt 3 Z  &lt 4 X  &kp C  &kp D  &kp V       &kp K  &kp H  &kp COMMA      &kp DOT     &kp MINUS     &kp EQUAL
                                                   &mt LALT DEL  &kp SPACE  &mt LGUI ESC    &lt 2 RET  &lt 1 BSPC  &mt RALT F10
                         >;
                 };
