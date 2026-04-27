@@ -43,7 +43,7 @@
                             &lt 5 TAB      &kp Q  &kp W  &kp F  &kp P  &kp B       &kp J  &kp L  &kp U          &kp Y       &kp FSLH   &kp EQUAL
                             &mt LCTRL F12  &kp A  &kp R  &kp S  &kp T  &kp G       &kp M  &kp N  &kp E          &kp I       &kp O         &kp F11
                             &kp LSHFT      &lt 3 Z  &lt 4 X  &kp C  &kp D  &kp V       &kp K  &kp H  &kp COMMA      &kp DOT     &kp MINUS     &kp EQUAL
-                                                  &mt LALT DEL  &kp SPACE  &mt LGUI ESC    &lt 2 RET  &lt 1 BSPC  &mt RALT F10
+                                                  &mt LALT DEL  &kp SPACE  &mt LGUI ESC    &lt 2 RET  &lt 1 BSPC  &mt LS(LGUI) F10
                         >;
                 };
 
